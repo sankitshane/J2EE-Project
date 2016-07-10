@@ -1,0 +1,94 @@
+-- This CLP file was created using DB2LOOK Version "9.7" 
+-- Timestamp: 04-06-2015 09:55:26
+-- Database Name: WEBTEK         
+-- Database Manager Version: DB2/NT Version 9.7.0          
+-- Database Codepage: 1252
+-- Database Collating Sequence is: UNIQUE
+
+
+CONNECT TO WEBTEK;
+
+------------------------------------------------
+-- DDL Statements for table "SCHOOL  "."ADMIN"
+------------------------------------------------
+ 
+
+CREATE TABLE "SCHOOL  "."ADMIN"  (
+		  "NAME" VARCHAR(10) NOT NULL , 
+		  "PASS" VARCHAR(10) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "SCHOOL  "."PROP"
+------------------------------------------------
+ 
+
+CREATE TABLE "SCHOOL  "."PROP"  (
+		  "ID" VARCHAR(50) NOT NULL , 
+		  "DESCRIPTION" VARCHAR(500) NOT NULL )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+------------------------------------------------
+-- DDL Statements for table "SCHOOL  "."CLAIM"
+------------------------------------------------
+ 
+
+CREATE TABLE "SCHOOL  "."CLAIM"  (
+		  "NAME" VARCHAR(30) NOT NULL , 
+		  "DATEOFBIRTH" VARCHAR(20) NOT NULL , 
+		  "SMOKER" VARCHAR(10) NOT NULL , 
+		  "MARRIED" VARCHAR(10) NOT NULL , 
+		  "NUMBEROFCHILDREN" VARCHAR(20) NOT NULL , 
+		  "MAILADDRESS" VARCHAR(30) NOT NULL , 
+		  "CITY" VARCHAR(20) NOT NULL , 
+		  "STATE" VARCHAR(20) NOT NULL , 
+		  "ZIP" VARCHAR(10) NOT NULL , 
+		  "PHONENUMBER" VARCHAR(20) NOT NULL , 
+		  "EMAIL" VARCHAR(50) NOT NULL , 
+		  "PASSWORD" VARCHAR(30) , 
+		  "REGISTRATION" VARCHAR(20) , 
+		  "SMART" VARCHAR(10) , 
+		  "POLICYCODE" VARCHAR(20) WITH DEFAULT 'null' , 
+		  "INSURED" VARCHAR(20) WITH DEFAULT 'null' , 
+		  "CLAIMDATE" VARCHAR(20) WITH DEFAULT 'null' , 
+		  "CLAIMAMOUNT" VARCHAR(20) WITH DEFAULT 'null' , 
+		  "BALANCE" INTEGER )   
+		 IN "USERSPACE1" ; 
+
+
+
+
+
+
+
+
+
+
+
+
+COMMIT WORK;
+
+CONNECT RESET;
+
+TERMINATE;
+
+-- Specified SCHEMA is: SCHOOL
+-- The db2look utility will consider only the specified tables 
+-- Creating DDL for table(s)
+
+-- Schema name is ignored for the Federated Section
+-- Binding package automatically ... 
+-- Bind is successful
+-- Binding package automatically ... 
+-- Bind is successful
+;
